@@ -1,0 +1,81 @@
+@import '../../assets/style/scss/mixin.scss';
+@import '../../assets/style/scss/variables.scss';
+
+.container:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+.container {
+  transition: .8s;
+  width: 199px;
+  cursor: pointer;
+  height: 341px;
+  border-radius: 9px;
+  background-color: $white;
+  padding: 12px;
+  border: 1px solid $white;
+  .image {
+    position: relative;
+    margin-bottom: 8px;
+    .favorite {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+  .title {
+    @include app-w400-size15;
+    color: $grey90;
+    letter-spacing: 0.28px;
+    margin-bottom: 24px;
+    height: 51px;
+  }
+  .price {
+    @include app-w700-size19;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    .status {
+      @include app-w500-size12;
+      color: $green;
+    }
+    .complects {
+      @include app-w400-size12;
+      color: $blue32;
+    }
+  }
+  .countBtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7px;
+  }
+  .count {
+    @include app-w500-size15;
+  }
+
+  .min,
+  .plus {
+    transition: 0.3s;
+    width: 33px;
+    cursor: pointer;
+    height: 33px;
+    border-radius: 50%;
+    background-color: $f5-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      font-size: 24px;
+    }
+  }
+  .min:hover,
+  .plus:hover {
+    background-color: $blue32;
+    span {
+      color: $white;
+    }
+  }
+}

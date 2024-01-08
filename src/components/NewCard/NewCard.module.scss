@@ -1,0 +1,49 @@
+@import '../../assets/style/scss/mixin.scss';
+@import '../../assets/style/scss/variables.scss';
+
+.container {
+  width: 400px;
+  height: 181px;
+  border-radius: 11px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 21px;
+  justify-content: space-between;
+  background-color: $color-F0;
+  position: relative;
+  .right, .left {
+    z-index: 999;
+  }
+  .discount {
+    @include app-w700-size24;
+    margin-bottom: 5px;
+  }
+  .text {
+    @include app-w400-size14;
+    margin-bottom: 22px;
+  }
+  .btn {
+    background-color: $main-color;
+    border-radius: 11px;
+    color: $white;
+    width: 109px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include app-w400-size10;
+    cursor: pointer;
+  }
+  .ellipse1, .ellipse2 {
+    position: absolute;
+  }
+  .ellipse1 {
+    left: -10px;
+    bottom: 0;
+  }
+  .ellipse2 {
+    top: 0;
+    right: 0;
+  }
+}

@@ -1,0 +1,100 @@
+@import '../../assets/style/scss/mixin.scss';
+@import '../../assets/style/scss/variables.scss';
+
+.footer {
+  background: linear-gradient(107deg, #3186c3 6.46%, #004f86 68.08%);
+  padding-top: 72px;
+  padding-bottom: 30px;
+  margin-top: 35px;
+  color: $white;
+  .content {
+    display: flex;
+    gap: 261px;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding-bottom: 132px;
+    .left {
+      display: flex;
+      flex-direction: column;
+      .logo {
+        width: 183px;
+        height: 51px;
+      }
+      .text {
+        margin-top: 42px;
+        margin-bottom: 72px;
+
+        width: 230px;
+        @include app-w400-size14;
+      }
+      .store {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        img {
+          width: 144px;
+          height: 46px;
+          object-fit: cover;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .title {
+        @include app-w700-size20;
+        margin-bottom: 40px;
+      }
+      .address,
+      .company,
+      .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .addresTitle {
+          @include app-w400-size15;
+          color: $greyE0;
+        }
+        .street {
+          @include app-w500-size15;
+          margin-top: 5px;
+        }
+        .column {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .whats {
+        width: 125px;
+        height: 29px;
+        background-color: $white;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        gap: 13px;
+        .whatsText {
+          color: $green;
+          @include app-w600-size14;
+        }
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 33px;
+    .bottomText {
+      color: $opacit50-white-color;
+    }
+    .social {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+}

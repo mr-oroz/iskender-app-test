@@ -1,0 +1,19 @@
+@import '../../assets/style/scss/mixin.scss';
+@import '../../assets/style/scss/variables.scss';
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .title {
+    @include app-w600-size25;
+    color: $black;
+    padding: 18px 0;
+  }
+  .text {
+    @include app-w600-size16;
+    color: $blue32;
+    cursor: pointer;
+  }
+}
+

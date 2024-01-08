@@ -1,0 +1,9 @@
+@import '../../assets/style/scss/mixin.scss';
+@import '../../assets/style/scss/variables.scss';
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+}

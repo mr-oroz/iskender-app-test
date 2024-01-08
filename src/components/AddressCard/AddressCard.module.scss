@@ -1,0 +1,61 @@
+@import '../../assets/style/scss/mixin.scss';
+@import '../../assets/style/scss/variables.scss';
+
+.container:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+.container {
+  transition: 0.8s;
+  padding: 15px;
+  cursor: pointer;
+  background-color: $white;
+  border-radius: 10px;
+  width: 408px;
+  height: 179px;
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #E3E3E3;
+    .topLeft {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      
+      .name {
+        @include app-w500-size18;
+      }
+      .openMap {
+        @include app-w400-size12;
+        color: $blue00;
+        text-decoration: underline;
+        margin-top: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+  .center {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    margin: 21px 0;
+    .textLocation {
+      @include app-w400-size14;
+    }
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .clock, .phone {
+    display: flex;
+    align-items: center;
+    gap: 5px
+  }
+  .time, .phoneNumber {
+    @include app-w400-size14;
+  }
+}

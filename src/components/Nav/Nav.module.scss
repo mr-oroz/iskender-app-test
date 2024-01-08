@@ -1,0 +1,9 @@
+@import '../../assets/style/scss/mixin.scss';
+@import '../../assets/style/scss/variables.scss';
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 0;
+}
